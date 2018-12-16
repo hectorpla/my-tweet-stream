@@ -11,6 +11,7 @@ export const OfficalAccountItem = ({ account }: Props) => {
   return (
     <div className="flex-row official-account-item">
       <img src={account.imageUrl} alt="img" className="account-image" />
+      {/* TODO: eliminate new line for name and id */}
       {account.name}
       <i className="material-icons icon">done_all</i> {"  "} @
       {account.displayId}

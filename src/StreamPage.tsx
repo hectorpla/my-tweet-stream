@@ -1,6 +1,6 @@
 import * as React from "react";
 import StreamPanel from "./StreamPanel/StreamPanel";
-import { TweetsPanel } from "./TweetsPanel";
+import { TweetsPanel } from "./TweetsPanel/TweetsPanel";
 
 import "./StreamPage.css";
 
@@ -13,7 +13,7 @@ export const StreamPage = ({ match }: any) => {
       </div>
 
       <div className="page-section">
-        <TweetsPanel />
+        <TweetsPanel topicId={"mock"} />
       </div>
     </div>
   );

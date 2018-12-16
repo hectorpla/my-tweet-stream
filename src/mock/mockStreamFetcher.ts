@@ -7,12 +7,14 @@ export const getStreamInfo = (streamId: string): StreamInfo => {
       {
         name: "NFL",
         displayId: "NFL",
-        imageUrl: "https://goo.gl/images/NSp5Uj"
+        imageUrl:
+          "https://pbs.twimg.com/profile_images/1056503844689956865/kIxE5Zmx_bigger.jpg"
       },
       {
         name: "CBS Sports",
         displayId: "CBSSport",
-        imageUrl: "https://goo.gl/images/HqoVmL"
+        imageUrl:
+          "https://pbs.twimg.com/profile_images/1045351578096599041/Dr9xa2rd_bigger.jpg"
       }
     ],
     sourceUrl: "blank"

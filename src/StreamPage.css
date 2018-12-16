@@ -2,6 +2,7 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .stream-page div {
@@ -11,6 +12,11 @@
 .page-section {
   flex: 1;
   flex-direction: column;
+  padding: 5px;
+}
+
+.stream-panel {
+  padding: 5px;
 }
 
 @media screen and (max-width: 990px) {

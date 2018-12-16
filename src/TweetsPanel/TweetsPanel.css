@@ -1,0 +1,8 @@
+.tweets-frame {
+  background-color: chocolate;
+  flex-direction: column;
+}
+
+.tweets-container {
+  flex-direction: column;
+}

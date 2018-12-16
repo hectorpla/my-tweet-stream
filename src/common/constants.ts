@@ -1,4 +1,4 @@
 export interface AppQuery {
-  type: "stream" | "tweet";
+  type: "stream" | "tweets";
   arg: string;
 }
