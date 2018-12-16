@@ -1,0 +1,19 @@
+.icon {
+  font-size: 1.5em;
+  color: black;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  margin-bottom: solid 3px;
+  background-color: antiquewhite;
+}

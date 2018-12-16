@@ -1,0 +1,8 @@
+.account-image {
+  height: 30px;
+  widows: auto;
+}
+
+.flex-row {
+  display: flex;
+}

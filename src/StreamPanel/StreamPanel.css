@@ -1,0 +1,5 @@
+.stream-frame {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
