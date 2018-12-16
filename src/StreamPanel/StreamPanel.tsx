@@ -12,12 +12,12 @@ export interface Props {
 
 export const StreamPanel = ({ streamId }: Props) => {
   return (
-    <div className="row">
+    <>
       Stream
       <QueryComponent query={{ type: "stream", arg: streamId }}>
         {(data: StreamInfo) => {
           return (
-            <div className="row stream-frame">
+            <div className="stream-frame">
               <StreamTitle title={data.title} />
               <video src="https://youtu.be/AJ8QZvJxYyc" />
               <OfficialAccountList accounts={data.officialAccounts} />
@@ -25,7 +25,7 @@ export const StreamPanel = ({ streamId }: Props) => {
           );
         }}
       </QueryComponent>
-    </div>
+    </>
   );
 };
 

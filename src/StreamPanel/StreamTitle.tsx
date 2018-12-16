@@ -5,7 +5,7 @@ export interface Props {
 }
 export const StreamTitle = ({ title }: Props) => {
   return (
-    <div className="row">
+    <div className="">
       {title}{" "}
       <span style={{ color: "white", backgroundColor: "red" }}> LIVE </span>
     </div>

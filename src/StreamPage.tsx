@@ -2,15 +2,17 @@ import * as React from "react";
 import StreamPanel from "./StreamPanel/StreamPanel";
 import { TweetsPanel } from "./TweetsPanel";
 
+import "./StreamPage.css";
+
 // TODO set router for this component
 export const StreamPage = ({ match }: any) => {
   return (
-    <div className="row">
-      <div className="col s12 m6 l6">
+    <div className="stream-page">
+      <div className="page-section">
         <StreamPanel streamId={"mock"} />
       </div>
 
-      <div className="col s12 m6 l6">
+      <div className="page-section">
         <TweetsPanel />
       </div>
     </div>

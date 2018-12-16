@@ -9,7 +9,7 @@ export interface Props {
 }
 export const OfficalAccountItem = ({ account }: Props) => {
   return (
-    <div className="col s6 m6 flex-row official-account-item">
+    <div className="flex-row official-account-item">
       <img src={account.imageUrl} alt="img" className="account-image" />
       {account.name}
       <i className="material-icons icon">done_all</i> {"  "} @

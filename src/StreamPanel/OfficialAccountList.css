@@ -1,0 +1,7 @@
+.official-accounts-frame {
+  flex-direction: column;
+}
+
+.official-accounts-container {
+  display: flex;
+}
