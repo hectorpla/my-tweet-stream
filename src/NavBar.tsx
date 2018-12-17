@@ -19,12 +19,18 @@ export const NavBar = () => (
     <ul className="right nav-group">
       <li className="search-bar nav-item">
         <div>
-          <form className="nav-item">
-            <input type="text" placeholder="Search" />
-            <span>
-              <i className="material-icons">search</i>
-            </span>
-          </form>
+          <div>
+            <form className="search-form">
+              <input
+                type="text"
+                placeholder="Search"
+                className="search-input"
+              />
+              <span className="search-icon">
+                <i className="material-icons">search</i>
+              </span>
+            </form>
+          </div>
         </div>
       </li>
       <li className="nav-item">Have an account? Log in</li>

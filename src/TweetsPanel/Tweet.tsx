@@ -20,18 +20,18 @@ export const Tweet = ({ data }: Props) => {
         <img src={user.imageUrl} className="avatar" />
         <div className="tweet-col-right">
           <div className="tweet-header">
-            <a href="">{user.name}</a> {"  "} @ {user.displayId}
-            {convertToRelativeTime(time)}
+            <a href="">{user.name}</a> @ {user.displayId}•
+            <span>{convertToRelativeTime(time)}</span>
           </div>
           <p className="tweet-text">{content}</p>
           <div className="action-list">
-            <div>
+            <div className="action-list-item">
               <i className="material-icons">reply</i>
             </div>
-            <div>
+            <div className="action-list-item">
               <i className="material-icons">g_translate</i>
             </div>
-            <div>
+            <div className="action-list-item">
               <i className="material-icons">favorite_border</i>
             </div>
           </div>

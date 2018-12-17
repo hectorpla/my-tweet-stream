@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import "./materialize.css";
-
 import NavBar from "./NavBar";
 import StreamPage from "./StreamPage";
 

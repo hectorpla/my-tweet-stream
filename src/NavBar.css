@@ -1,22 +1,53 @@
 .icon {
   font-size: 1.5em;
   color: black;
+  margin-right: 3px;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
+  padding-left: 3px;
+  padding-right: 10px;
 }
 
 .nav-group {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
 }
 
 .nav {
   margin-bottom: solid 3px;
-  background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #66757f;
+  border-bottom: 1px solid grey;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-input {
+  background-color: #f5f8fa;
+  border: 1px solid #e6ecf0;
+  color: #14171a;
+  padding: 8px 32px 8px 12px;
+  border-radius: 21px;
+}
+
+.search-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  height: 26px;
+  width: 26px;
+  color: #14171a;
+}
+
+.login-span {
+  font-size: 14px;
 }
