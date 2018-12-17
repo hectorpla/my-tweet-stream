@@ -15,16 +15,22 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  padding: 0;
 }
 
-.nav {
-  margin-bottom: solid 3px;
+.nav-wrapper {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #66757f;
   border-bottom: 1px solid grey;
-  margin-right: 35px;
 }
 
 .search-form {

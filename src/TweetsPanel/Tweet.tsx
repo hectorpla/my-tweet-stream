@@ -37,12 +37,12 @@ export const Tweet = ({ data }: Props) => {
           <div className="tweet-header">
             <a href="" className="tweet-header-name">
               {user.name}
-            </a>{" "}
+            </a>
             <span className="tweet-header-meta">
-              @{user.displayId}•{convertToRelativeTime(time)}
+              @{user.displayId} • {convertToRelativeTime(time)}
             </span>
           </div>
-          <p className="tweet-text">{content}</p>
+          <div className="tweet-text">{content}</div>
           <div className="action-list">
             <div className="action-list-item">
               <i className="material-icons">reply</i>

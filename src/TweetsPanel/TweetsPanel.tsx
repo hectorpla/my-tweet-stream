@@ -18,14 +18,22 @@ export const TweetsPanel = ({ topicId }: Props) => {
         <QueryComponent query={{ type: "tweets", arg: topicId }}>
           {(data: TweetData[]) => {
             return (
-              <div className="tweets-container">
-                {data.map(tweet => (
-                  <Tweet
-                    data={tweet}
-                    key={tweet.content.slice(0, 10) + tweet.time}
-                  />
-                ))}
-              </div>
+              data.length > 0 && (
+                <div className="tweets-container">
+                  {data.map(tweet => (
+                    <div className="tweet-container">
+                      <Tweet
+                        data={tweet}
+                        key={
+                          tweet.content.slice(0, 10) +
+                          tweet.time +
+                          5 * Math.random()
+                        }
+                      />
+                    </div>
+                  ))}
+                </div>
+              )
             );
           }}
         </QueryComponent>

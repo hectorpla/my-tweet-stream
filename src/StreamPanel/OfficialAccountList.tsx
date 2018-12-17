@@ -13,11 +13,11 @@ export const OfficialAccountList = ({ accounts }: Props) => {
     <>
       <div className="official-accounts-frame">
         <div className="official-accounts-title">
-          <p>Official accounts</p>
+          <div>Official accounts</div>
         </div>
         <div className="official-account-list">
           {accounts.map(account => (
-            <OfficalAccountItem account={account} />
+            <OfficalAccountItem account={account} key={account.displayId} />
           ))}
         </div>
       </div>
