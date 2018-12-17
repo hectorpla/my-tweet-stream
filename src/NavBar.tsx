@@ -4,7 +4,7 @@ import "./NavBar.css";
 
 export const NavBar = () => (
   <div className="nav">
-    <ul className="left nav-group">
+    <ul className="nav-group">
       <li>
         <a className="nav-item">
           <i className="material-icons icon">home</i>Home
@@ -16,7 +16,8 @@ export const NavBar = () => (
         </a>
       </li>
     </ul>
-    <ul className="right nav-group">
+    {/* TODO: clipped look on small screen */}
+    <ul className="nav-group">
       <li className="search-bar nav-item">
         <div>
           <div>
@@ -33,7 +34,11 @@ export const NavBar = () => (
           </div>
         </div>
       </li>
-      <li className="nav-item">Have an account? Log in</li>
+      <li className="nav-item">
+        <span className="login-span">
+          Have an account? <strong className="drop-down">Log in</strong>
+        </span>
+      </li>
     </ul>
   </div>
 );

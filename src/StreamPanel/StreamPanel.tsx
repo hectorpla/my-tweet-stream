@@ -13,13 +13,15 @@ export interface Props {
 export const StreamPanel = ({ streamId }: Props) => {
   return (
     <>
-      Stream
       <QueryComponent query={{ type: "stream", arg: streamId }}>
         {(data: StreamInfo) => {
           return (
             <div className="stream-frame">
               <StreamTitle title={data.title} />
-              <video src="https://youtu.be/AJ8QZvJxYyc" />
+              <iframe
+                className="stream-content"
+                src="https://youtu.be/AJ8QZvJxYyc"
+              />
               <OfficialAccountList accounts={data.officialAccounts} />
             </div>
           );

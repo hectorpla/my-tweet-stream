@@ -8,8 +8,23 @@ export interface Props {
 }
 
 const convertToRelativeTime = (date: Date): string => {
-  // TODO impl
-  return date.toDateString();
+  // naive implementation
+  const currentDate = new Date();
+  const diff = currentDate.getTime() - date.getTime();
+  const minDiff = diff / 60 / 1000;
+  const hrDiff = minDiff / 60;
+  const dayDiff = hrDiff / 24;
+  if (Math.floor(dayDiff) > 0) {
+    return dayDiff + "d";
+  }
+  if (Math.floor(hrDiff) > 0) {
+    return Math.floor(hrDiff) + "h";
+  }
+  if (Math.floor(minDiff) > 0) {
+    return Math.floor(minDiff) + "m";
+  }
+
+  return "right now";
 };
 
 export const Tweet = ({ data }: Props) => {
@@ -20,8 +35,12 @@ export const Tweet = ({ data }: Props) => {
         <img src={user.imageUrl} className="avatar" />
         <div className="tweet-col-right">
           <div className="tweet-header">
-            <a href="">{user.name}</a> @ {user.displayId}•
-            <span>{convertToRelativeTime(time)}</span>
+            <a href="" className="tweet-header-name">
+              {user.name}
+            </a>{" "}
+            <span className="tweet-header-meta">
+              @{user.displayId}•{convertToRelativeTime(time)}
+            </span>
           </div>
           <p className="tweet-text">{content}</p>
           <div className="action-list">

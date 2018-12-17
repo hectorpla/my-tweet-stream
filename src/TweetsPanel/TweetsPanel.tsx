@@ -15,7 +15,6 @@ export const TweetsPanel = ({ topicId }: Props) => {
   return (
     <>
       <div className="tweets-frame">
-        Tweets
         <QueryComponent query={{ type: "tweets", arg: topicId }}>
           {(data: TweetData[]) => {
             return (
@@ -31,6 +30,7 @@ export const TweetsPanel = ({ topicId }: Props) => {
           }}
         </QueryComponent>
       </div>
+      {/* TODO: styling bug: bottom border for the last row */}
     </>
   );
 };

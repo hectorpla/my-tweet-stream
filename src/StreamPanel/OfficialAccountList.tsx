@@ -10,16 +10,18 @@ interface Props {
 
 export const OfficialAccountList = ({ accounts }: Props) => {
   return (
-    <div className="official-accounts-frame">
-      <p>Official accounts</p>
-      <div className="official-accounts-container">
-        {accounts.map(account => (
-          <div>
+    <>
+      <div className="official-accounts-frame">
+        <div className="official-accounts-title">
+          <p>Official accounts</p>
+        </div>
+        <div className="official-account-list">
+          {accounts.map(account => (
             <OfficalAccountItem account={account} />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

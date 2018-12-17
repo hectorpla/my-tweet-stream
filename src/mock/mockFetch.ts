@@ -16,7 +16,7 @@ export const mockFetch = (query: AppQuery): Promise<any> => {
     return new Promise(resolve => {
       setTimeout(() => {
         resolve(getTweets());
-      }, 300);
+      }, 0);
     });
   }
   return Promise.resolve(undefined);

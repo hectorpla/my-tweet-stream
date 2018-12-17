@@ -42,14 +42,33 @@ export class QueryComponent<TData> extends React.Component<
 
   public render() {
     if (this.state.loading) {
-      return <div>spinner</div>;
+      return (
+        <div style={defaultStyle}>
+          <div style={{}} className="loader" />
+        </div>
+      );
     }
     if (this.state.error) {
-      return <div>Error: {this.state.error}</div>;
+      return (
+        <div style={defaultStyle}>
+          {" "}
+          <div>Error: {this.state.error}</div>
+        </div>
+      );
     }
     if (!this.state.data) {
-      return <div>No data</div>;
+      return (
+        <div style={defaultStyle}>
+          {" "}
+          <div>No data</div>
+        </div>
+      );
     }
     return this.props.children(this.state.data!);
   }
 }
+
+const defaultStyle: React.CSSProperties = {
+  alignItems: "center",
+  justifyContent: "center"
+};

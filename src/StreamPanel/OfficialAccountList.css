@@ -1,7 +1,25 @@
 .official-accounts-frame {
   flex-direction: column;
+  color: #66757f;
 }
 
-.official-accounts-container {
-  display: flex;
+.official-account-list {
+  flex-wrap: wrap;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items */
+/* ! not sure about the value, not perfectly aligned with parent */
+.official-account-list > * {
+  flex: 0 0 45%;
+}
+
+.official-accounts-title {
+  font-size: 19px;
+  font-weight: lighter;
+}
+
+.avatar--smaller {
+  width: 36px;
+  height: 36px;
+  border-radius: 10%;
+  margin-right: 10px;
 }
